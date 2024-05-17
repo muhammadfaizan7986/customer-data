@@ -1,0 +1,17 @@
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #111827;
+}
+
+
+.bd{
+    border: 1px solid red;
+}
+
+.scroll-hidden::-webkit-scrollbar{
+    display: none;
+}
