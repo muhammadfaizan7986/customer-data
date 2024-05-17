@@ -1,4 +1,7 @@
 import React, { Fragment } from 'react';
+import Input from '../components/common/input/Input';
+import Button from '../components/common/button/Button';
+import { Link } from 'react-router-dom';
 
 type Props = {};
 const tableData = [
@@ -135,6 +138,17 @@ const ServicesTablePage = (props: Props) => {
   return (
     <Fragment>
       <div className="p-4 sm:ml-64">
+        <div className="flex justify-center gap-32 ">
+          <div className="basis-1/2">
+            <Input label="search service" placeholder="search services...." />
+          </div>
+          <Link
+            to={'/login'}
+            className="flex justify-center items-center basis-1/2"
+          >
+            <Button>Add Customer</Button>
+          </Link>
+        </div>
         <div className="relative overflow-x-auto shadow-md rounded-lg scroll-hidden ">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
