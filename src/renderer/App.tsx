@@ -6,6 +6,8 @@ import CustomerTable from './pages/CustomerTable';
 import ServicesTable from './pages/ServicesTable';
 import SideBar from './components/ui/sideBar/SideBar';
 import Login from './pages/Login';
+import InvoicesTablePage from './modules/InvoicesTablePage';
+import OrderTablePage from './modules/OrderTablePage';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/customer-table" element={<CustomerTable />} />
         <Route path="/service-table" element={<ServicesTable />} />
+        <Route path="/invoices" element={<InvoicesTablePage />} />
+        <Route path="/order" element={<OrderTablePage />} />
       </Routes>
     </Router>
   );
