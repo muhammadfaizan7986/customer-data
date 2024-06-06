@@ -2,6 +2,7 @@ import React, { ChangeEvent } from 'react';
 
 type InputProps = {
   label?: string;
+  lableclassName?: string;
   id?: string;
   type?: 'text' | 'email' | 'password' | 'number' | 'file'; // Add more types as needed
   className?: string;
@@ -26,7 +27,7 @@ const Input: React.FC<InputProps> = ({
       {label && (
         <label
           htmlFor={id}
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-black dark:text-white"
         >
           {label}
         </label>
